@@ -22,7 +22,7 @@ jobs:
       # this creates a json file from the stringified json from the request body
       - name: create json from request body
         id: create-json
-        uses: jsdaniell/create-json@1.2.1
+        uses: jsdaniell/create-json@1.1.2
         with:
           # it uses the figma filename that was send as then filename parameter
           name: ${{ github.event.client_payload.filename }}
@@ -38,7 +38,7 @@ jobs:
           node-version: 18.x
       # We now run npm i to install all dependencies and run the "transform-tokens" script that is defined in the package.json (change this if you need to)
       - name: Install dependencies and transform tokens 
-        run: 'npm i && npm run transform-tokens'
+        run: 'npm ci && npm run transform-tokens'
       # We now create a pull request 
       - name: Create PR 
         uses: peter-evans/create-pull-request@v3

@@ -1,0 +1,49 @@
+/**
+ * Do not edit directly
+ * Generated on Sun, 04 Dec 2022 02:06:37 GMT
+ */
+
+export const SpacingLarge = {"top":30,"bottom":30,"left":30,"right":30};
+export const SpacingSmall = {"top":10,"bottom":10,"left":10,"right":10};
+export const ColorPrimary = "#8f00ff";
+export const ColorError = "#ff0000";
+export const ColorSuccess = "#00b53d";
+export const ColorWarning = "#9cc300";
+export const ColorBody = "#e3e3e3";
+export const ColorInverseBody = "#f2f2f2";
+export const FontHeading1 = {"fontSize":32,"textDecoration":"none","fontFamily":"Inter","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":38.4,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
+export const FontHeading2 = {"fontSize":24,"textDecoration":"none","fontFamily":"Inter","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":28.8,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
+export const FontBody = {"fontSize":16,"textDecoration":"none","fontFamily":"Inter","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":19.2,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
+export const TypographyHeading1FontSize = 32;
+export const TypographyHeading1TextDecoration = "none";
+export const TypographyHeading1FontFamily = "Inter";
+export const TypographyHeading1FontWeight = 400;
+export const TypographyHeading1FontStyle = "normal";
+export const TypographyHeading1FontStretch = "normal";
+export const TypographyHeading1LetterSpacing = 0;
+export const TypographyHeading1LineHeight = 38.4;
+export const TypographyHeading1ParagraphIndent = 0;
+export const TypographyHeading1ParagraphSpacing = 0;
+export const TypographyHeading1TextCase = "none";
+export const TypographyHeading2FontSize = 24;
+export const TypographyHeading2TextDecoration = "none";
+export const TypographyHeading2FontFamily = "Inter";
+export const TypographyHeading2FontWeight = 400;
+export const TypographyHeading2FontStyle = "normal";
+export const TypographyHeading2FontStretch = "normal";
+export const TypographyHeading2LetterSpacing = 0;
+export const TypographyHeading2LineHeight = 28.8;
+export const TypographyHeading2ParagraphIndent = 0;
+export const TypographyHeading2ParagraphSpacing = 0;
+export const TypographyHeading2TextCase = "none";
+export const TypographyBodyFontSize = 16;
+export const TypographyBodyTextDecoration = "none";
+export const TypographyBodyFontFamily = "Inter";
+export const TypographyBodyFontWeight = 400;
+export const TypographyBodyFontStyle = "normal";
+export const TypographyBodyFontStretch = "normal";
+export const TypographyBodyLetterSpacing = 0;
+export const TypographyBodyLineHeight = 19.2;
+export const TypographyBodyParagraphIndent = 0;
+export const TypographyBodyParagraphSpacing = 0;
+export const TypographyBodyTextCase = "none";

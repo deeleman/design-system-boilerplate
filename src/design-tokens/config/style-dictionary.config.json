@@ -1,0 +1,28 @@
+{
+  "source": [
+    "**/*.tokens.json"
+  ],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "prefix": "hs",
+      "buildPath": "src/design-tokens/css/",
+      "files": [
+        {
+          "destination": "_variables.css",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "src/design-tokens/js/",
+      "files": [
+        {
+          "destination": "variables.js",
+          "format": "javascript/es6"
+        }
+      ]
+    }
+  }
+}

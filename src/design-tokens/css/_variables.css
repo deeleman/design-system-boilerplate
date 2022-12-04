@@ -1,0 +1,51 @@
+/**
+ * Do not edit directly
+ * Generated on Sun, 04 Dec 2022 02:06:37 GMT
+ */
+
+:root {
+  --hs-spacing-large: [object Object];
+  --hs-spacing-small: [object Object];
+  --hs-color-primary: #8f00ff;
+  --hs-color-error: #ff0000;
+  --hs-color-success: #00b53d;
+  --hs-color-warning: #9cc300;
+  --hs-color-body: #e3e3e3;
+  --hs-color-inverse-body: #f2f2f2;
+  --hs-font-heading-1: [object Object];
+  --hs-font-heading-2: [object Object];
+  --hs-font-body: [object Object];
+  --hs-typography-heading-1-font-size: 32;
+  --hs-typography-heading-1-text-decoration: none;
+  --hs-typography-heading-1-font-family: Inter;
+  --hs-typography-heading-1-font-weight: 400;
+  --hs-typography-heading-1-font-style: normal;
+  --hs-typography-heading-1-font-stretch: normal;
+  --hs-typography-heading-1-letter-spacing: 0;
+  --hs-typography-heading-1-line-height: 38.4;
+  --hs-typography-heading-1-paragraph-indent: 0;
+  --hs-typography-heading-1-paragraph-spacing: 0;
+  --hs-typography-heading-1-text-case: none;
+  --hs-typography-heading-2-font-size: 24;
+  --hs-typography-heading-2-text-decoration: none;
+  --hs-typography-heading-2-font-family: Inter;
+  --hs-typography-heading-2-font-weight: 400;
+  --hs-typography-heading-2-font-style: normal;
+  --hs-typography-heading-2-font-stretch: normal;
+  --hs-typography-heading-2-letter-spacing: 0;
+  --hs-typography-heading-2-line-height: 28.8;
+  --hs-typography-heading-2-paragraph-indent: 0;
+  --hs-typography-heading-2-paragraph-spacing: 0;
+  --hs-typography-heading-2-text-case: none;
+  --hs-typography-body-font-size: 16;
+  --hs-typography-body-text-decoration: none;
+  --hs-typography-body-font-family: Inter;
+  --hs-typography-body-font-weight: 400;
+  --hs-typography-body-font-style: normal;
+  --hs-typography-body-font-stretch: normal;
+  --hs-typography-body-letter-spacing: 0;
+  --hs-typography-body-line-height: 19.2;
+  --hs-typography-body-paragraph-indent: 0;
+  --hs-typography-body-paragraph-spacing: 0;
+  --hs-typography-body-text-case: none;
+}

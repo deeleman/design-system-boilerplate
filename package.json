@@ -1,0 +1,24 @@
+{
+  "name": "design-system-boilerplate",
+  "description": "A seed project to kick off a Design System project on top of Stencil and Figma Tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "style-dictionary": "^3.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transform-tokens": "node ./src/design-tokens/config/transform-tokens.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deeleman/design-system-boilerplate.git"
+  },
+  "author": "Pablo Deeleman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deeleman/design-system-boilerplate/issues"
+  },
+  "homepage": "https://github.com/deeleman/design-system-boilerplate#readme"
+}

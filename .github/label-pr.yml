@@ -1,0 +1,6 @@
+# Config for PR auto-label action in /.github/workflows/label-pr.yml
+# This config file contains filepath regex matchers and labels to be
+# applied to PRs containing fiels matching the regExp path.
+# ** Config entry to auto-label changes in design tokens.
+- regExp: "^src\/design-tokens\/json\/.+\.tokens\.json$"
+  labels: ["design tokens"]

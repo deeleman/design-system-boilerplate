@@ -15,7 +15,7 @@ jobs:
     steps:
       # this lets us work in the actual repository 
       - uses: actions/checkout@master
-      # if the folder named "tokens" does not exist, create it
+      # if the folder named "src/design-tokens/json" does not exist, create it
       - name: mkdir "src/design-tokens/json" directory
         # change tokens here (and in line 32) if you want to use a differently named folder 
         run: 'mkdir -p src/design-tokens/json'
@@ -41,12 +41,21 @@ jobs:
         run: 'npm i && npm run transform-tokens'
       # We now create a pull request 
       - name: Create PR 
-        uses: peter-evans/create-pull-request@v3
+        uses: devops-infra/action-pull-request@v0.5.3
         with:
-          commit-message: "Design tokens updated"
-          title: "Design tokens updated"
-          body: "Design tokens have been updated via Figma and need to be reviewed."
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # this parameter is optional and defaults to master but I am using main
-          BRANCH_NAME: 'main'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # source_branch: update-design-tokens
+          target_branch: main
+          title: Design tokens update from Figma
+          label: design tokens
+          # template: .github/PULL_REQUEST_TEMPLATE.md
+          body: "**Automated pull request:** This PR was originated via an automated GitHub workflow action and cotnains the latest changes in the Design Tokens config."
+          # reviewer: octocat
+          # assignee: octocat
+          # milestone: My milestone
+          # draft: true
+          # old_string: "<!-- Add your description here -->"
+          # new_string: "** Automatic pull request**"
+          # get_diff: true
+          # ignore_users: "dependabot"
+          # allow_no_diff: false

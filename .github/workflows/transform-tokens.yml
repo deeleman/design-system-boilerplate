@@ -41,21 +41,14 @@ jobs:
         run: 'npm i && npm run transform-tokens'
       # We now create a pull request 
       - name: Create PR 
-        uses: devops-infra/action-pull-request@v0.5.3
+        uses: peter-evans/create-pull-request@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # source_branch: update-design-tokens
-          target_branch: main
-          title: Design tokens update from Figma
-          label: design tokens
-          # template: .github/PULL_REQUEST_TEMPLATE.md
-          body: "**Automated pull request:** This PR was originated via an automated GitHub workflow action and cotnains the latest changes in the Design Tokens config."
-          # reviewer: octocat
-          # assignee: octocat
-          # milestone: My milestone
-          # draft: true
-          # old_string: "<!-- Add your description here -->"
-          # new_string: "** Automatic pull request**"
-          # get_diff: true
-          # ignore_users: "dependabot"
-          # allow_no_diff: false
+          commit-message: "design tokens update"
+          title: "Design tokens updated"
+          body: "Design tokens have been updated via Figma and need to be reviewed."
+          branch: design-tokens-update-branch
+          labels: design tokens
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # this parameter is optional and defaults to master but we will use 'main'
+          BRANCH_NAME: 'main'

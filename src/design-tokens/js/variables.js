@@ -1,15 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Dec 2022 02:44:14 GMT
+ * Generated on Sun, 04 Dec 2022 13:07:25 GMT
  */
 
 export const SpacingLarge = {"top":30,"bottom":30,"left":30,"right":30};
 export const SpacingSmall = {"top":10,"bottom":10,"left":10,"right":10};
 export const ColorPrimary = "#8f00ff";
 export const ColorError = "#ff0000";
-export const ColorSuccess = "#00b53d";
-export const ColorWarning = "#9cc300";
-export const ColorBody = "#e3e3e3";
+export const ColorSuccess = "#1ab04d";
+export const ColorWarning = "#ebb834";
+export const ColorBody = "#ffeeee";
 export const ColorInverseBody = "#f2f2f2";
 export const FontHeading1 = {"fontSize":32,"textDecoration":"none","fontFamily":"Inter","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":38.4,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontHeading2 = {"fontSize":24,"textDecoration":"none","fontFamily":"Inter","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":28.8,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};

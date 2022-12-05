@@ -1,24 +1,55 @@
 {
   "name": "design-system-boilerplate",
-  "description": "A seed project to kick off a Design System project on top of Stencil and Figma Tokens",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A seed project to kick off a Design System project on top of Stencil, Figma Tokens and Storybook.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/design-system/design-system.esm.js",
   "dependencies": {
+    "@stencil/core": "^2.13.0",
     "style-dictionary": "^3.7.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/addons": "^6.5.14",
+    "@storybook/builder-webpack4": "^6.5.14",
+    "@storybook/html": "^6.5.14",
+    "@storybook/manager-webpack4": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.14",
+    "@types/jest": "^27.0.3",
+    "babel-loader": "^8.3.0",
+    "concurrently": "^7.6.0",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^10.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "transform-tokens": "node ./src/design-tokens/config/transform-tokens.js"
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "start:storybook": "start-storybook -p 6006",
+    "dev": "stencil build --docs",
+    "postdev": "concurrently \"stencil build --watch\" \"start-storybook -p 6006\"",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "transform-tokens": "node ./src/design-tokens/config/transform-tokens.js",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deeleman/design-system-boilerplate.git"
   },
   "author": "Pablo Deeleman",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/deeleman/design-system-boilerplate/issues"
-  },
-  "homepage": "https://github.com/deeleman/design-system-boilerplate#readme"
+  "license": "MIT"
 }

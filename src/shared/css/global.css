@@ -1,0 +1,6 @@
+/*
+  Use this file to allocate styles that can be
+  shared across components in your Design System.
+*/
+
+@import "../../design-tokens/css/_variables.css";

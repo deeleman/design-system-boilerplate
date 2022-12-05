@@ -5,10 +5,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build files
-build
-dist
-
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
@@ -45,5 +41,32 @@ node_modules/
 .yarn/install-state.gz
 .pnp.*
 
+# IDE config
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+
+# StencilJS build
+build
+dist/
+www/
+loader/
+
+*~
+*.sw[mnpcod]
+*.log
+*.lock
+*.tmp
+*.tmp.*
+log.txt
+
+.stencil/
+.sass-cache/
+.versions/
+
 # System files
+$RECYCLE.BIN/
 .DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate

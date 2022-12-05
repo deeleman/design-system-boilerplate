@@ -1,0 +1,41 @@
+@import "../../design-tokens/css/_variables.css";
+
+:host {
+  display: block;
+}
+
+button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+
+button.neutral {
+  color: var(--hs-color-body);
+  background-color: var(--hs-color-primary);
+}
+
+button.error {
+  color: var(--hs-color-body);
+  background-color: var(--hs-color-error);
+}
+
+button.small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+button.medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+button.large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+

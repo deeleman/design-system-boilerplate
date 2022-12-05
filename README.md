@@ -1,20 +1,19 @@
-# Design System Boilerplate
+# :bowtie: Design System Boilerplate
 
-![Built With Stencil](https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square)![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
+![Built With Stencil](https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square)
 
-A a starter project for building a Design System project on top of [Stencil](https://stenciljs.com/), [Storybook](https://storybook.js.org/) and the [Figma Design Tokens plugin](https://github.com/lukasoppermann/design-tokens). Additionally, the project comes with built-in support for [Emotion](https://emotion.sh/), should you want to manage dynamic CSS through a CSS-in-JS strategy.
+A starter project for building a Design System library on top of [Stencil](https://stenciljs.com/), [Storybook](https://storybook.js.org/) and the [Figma Design Tokens plugin](https://github.com/lukasoppermann/design-tokens). Additionally, the project comes with built-in support for [Emotion](https://emotion.sh/), should you want to manage dynamic CSS through a CSS-in-JS strategy.
 
 
-Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
+Stencil can also be used for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
 
-**Please note:** This project was originally intended as a supprot resource for the [Design Systems for Interactive Applications](https://harbour.space/front-end-development/courses/design-systems-for-interactive-applications-pablo-deeleman-782#preview) course module at [Harbour Space University](https://harbour.space/).
+**Please note:** This project was originally intended as a support resource for the [Design Systems for Interactive Applications](https://harbour.space/front-end-development/courses/design-systems-for-interactive-applications-pablo-deeleman-782#preview) course module at [Harbour Space University](https://harbour.space/).
 
-# Installation
+# :octocat: Installation
 
 There are two ways to take advantage of this kickstart project. 
-- Fork the repository. This is the preferred way.
-- Clone the repository and then push it to your own remote upstream.
+- Fork this repository. This is the preferred way.
+- Clone this repository and then push it to your own remote upstream.
 
 ## Requirements
 
@@ -24,7 +23,7 @@ Additionally, you will want to have the Git runtime installed in your system in 
 
 ### Option A (preferred): Fork the repository
 
-From the GitHub UI click on `Fork` button, select your username as Owner and enter a name of your choice for the destination repository that will be created straight away.
+From the GitHub UI click on `Fork` button, select your username as _Owner_ and enter a name of your choice for the destination repository that will be created straight away.
 
 Once the repository is successfully forked, go to your terminal window and run a git clone command pointing to the repository. Eg: if your username is `harbourspace` and you set `harbour-design-system` as your repository name, then you will want to run the following command in your Bash terminal:
 
@@ -42,9 +41,9 @@ git clone https://github.com/deeleman/design-system-boilerplate.git
 
 **BEWARE:** Once you clone a repository like this, the remote upstream `origin` will still point to `https://github.com/deeleman/design-system-boilerplate`. You will want to change the remote upstream to another repository of your choice by hand. Please [follow these instructions](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
 
-## Getting Started
+## :nerd_face: Getting Started
 
-To start building your new web component library, you will want to bash into the directory you just created to clone the repository and install all dependencies by running:
+To start building your new web component library, you will want to mode the shell prompt into the directory you just created upon cloning the repository and install all dependencies by running:
 
 ```bash
 npm install
@@ -64,7 +63,7 @@ However, building and testing components like that is pretty unefficient. In ord
 npm run dev
 ```
 
-The `dev` command builds the entire project inn first instance, then it boostraps a Storybook instance serving all `**/*.stories.js` (or `.ts`) files found in the project filesystem and triggers a build process in `watch` mode in the background, so all your changes will be immediately served in the screen.
+The `dev` command builds the entire project in first instance, and then it boostraps a Storybook instance serving all `**/*.stories.js` (or `.ts`) files found in the project filesystem. Once the Storybookminstance is available, an additional background build process is fired up in `watch` mode, so all your changes will be made immediately available by means of hot module replacement.
 
 Last but not least, if you want to build your components for production, just run:
 
@@ -78,10 +77,10 @@ To run the unit tests for the components (if any), run:
 npm test
 ```
 
-All these commands are part of teh default components library project installation. Need help to better understand its purpose and logic under the hood? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
+All these commands are part of the default components library project installation. Need help to better understand its purpose and logic under the hood? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
 
 
-## Namespacing your Design System project
+### Namespacing your Design System project
 
 Some build processes will use an internal naming token, also known as _namespace_, to properly name the output files and manage folder paths. You will want to customize such namespace token to one of your liking. For doing so please edit the `stencil.config.ts` file found at the root directory right after you clone your project and before you start editing any other files (although you can proceed with this change at a later stage):
 
@@ -94,14 +93,23 @@ export const config: Config = {
 };
 ```
 
+## Creating a new component
+
+In addition to the aforementioned npm scripts, a component generator script is available from package.json as well.
+
+In order to create a new component just run the following and a convenient CLI will prompt you through the different steps to create a new component, namely:
+
+- Select a tag anme for the new component
+- Select what files should the schematic runtime create: CSS file, unit or E2E tests...
+- And that's it!
 
 ### Naming components
 
 When creating new component tags, we recommend using a prefix, in consonance with your project namespa e, so you avoid name collisions with other web component libraries (ex: `<button />`).
 
-Therefore, use a prefix that fits your company or any name for a group of related components. For example, following up with Harbour Space, generated web components might use the prefix `hs-`. Eg: `<hs-button />`
+Therefore, use a prefix that fits your company or any name for a group of related components. For example, following up with Harbour Space, generated web components might use the prefix `hs-`. Eg: `<hs-button />`.
 
-## Using Figma Design Tokens plugin with this project
+## :art: Using Figma Design Tokens plugin with this project
 
 This project implements support for reading and digesting JSON files containing Design Tokens information. You can introduce Design Tokens in your workflow by taking two different approaches:
 
@@ -115,7 +123,7 @@ npm run transform-tokens
 
 You will see then how `_variables.css` and `variables.js` files are created in the `src/design-tokens/css` and `src/design-tokens/js` respectively.
 
-### Submitting Design Tokens information staright from Figma.
+### Submitting Design Tokens information straight from Figma.
 
 In order to do so, you will want to inatall the [Figma plugin](https://www.figma.com/community/plugin/888356646278934516/Design-Tokens) first and configure all your different layout information via Figma _styles_.
 
@@ -135,7 +143,7 @@ Then click on `Save and Export` and the infofrmation will be send to the remote 
 
 You can find more information and examples in [this tutorial](https://css-tricks.com/web-standards-meet-user-land-using-css-in-js-to-style-custom-elements/).
 
-## Publishing your library for later use elsewhere
+## :package: Publishing your library for later use elsewhere
 
 There are three strategies we recommend for using web components built with this library.
 

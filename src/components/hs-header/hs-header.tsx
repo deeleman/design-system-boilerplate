@@ -30,7 +30,7 @@ const ariaAttributes = [
  * components in our Design System.
  * ### Example:
  * ```html
- * <hs-heading level="a" text-align="center">Section name</hs-heading>
+ * <hs-heading level="1" text-align="center">Section name</hs-heading>
  * ```
  */
 @Component({
@@ -54,7 +54,6 @@ export class HsHeader {
    * property of the decorator object payload ensures that such property
    * will be also available in HTML, and not just when consuming Stencil
    * components from other components. 
-   * IMPORTANT: 
    */
 
   /**

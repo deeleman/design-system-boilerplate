@@ -109,6 +109,16 @@ When creating new component tags, we recommend using a prefix, in consonance wit
 
 Therefore, use a prefix that fits your company or any name for a group of related components. For example, following up with Harbour Space, generated web components might use the prefix `hs-`. Eg: `<hs-button />`.
 
+### Creating a demo playground for your component in Storyboard
+
+A generic component Storyboard template has been made available at `/src/stories/component.stories.template`. When creating a new component, just copy and paste that file into the component folder (so all files relevant to a particular component live in the same location) and rename it by replacing the `component` filename prefix by your component name and the `.template` file extension by `.ts`. Then proceed to update the stories config and template details within that file with your component API data en use cases. Next time you run `npm run dev`, those stories and docs will be featured in the UI.
+
+### Combining StencilJS and CSS-in-JS
+
+You can find more information and examples in [this tutorial](https://css-tricks.com/web-standards-meet-user-land-using-css-in-js-to-style-custom-elements/), although please beware that the actual moduel name is `@emotion/css` (the tutorial contents might be a bit outdated).
+
+This project contains support for the CSS API in Emotion, hence you can benefit from programmatic styling in your components. This can be used in combination with the scoped styles in your component stylesheet, since both strategies play nice together.
+
 ## :art: Using Figma Design Tokens plugin with this project
 
 This project implements support for reading and digesting JSON files containing Design Tokens information. You can introduce Design Tokens in your workflow by taking two different approaches:
@@ -138,10 +148,6 @@ Go back to Figma and then in the project layout select the Design Tokens plugin 
 Then click on `Save and Export` and the infofrmation will be send to the remote server. A serverless GitHub action will digest that information and will send an automateb Pull Request to the repository with the latest changes issued by the design team.
 
 **Important:** Your Design System project must be a public repository.
-
-### Combining StencilJS and CSS-in-JS
-
-You can find more information and examples in [this tutorial](https://css-tricks.com/web-standards-meet-user-land-using-css-in-js-to-style-custom-elements/).
 
 ## :package: Publishing your library for later use elsewhere
 

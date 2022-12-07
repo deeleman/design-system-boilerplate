@@ -12,9 +12,12 @@ export namespace Components {
     }
     interface HsHeader {
         /**
-          * Component public properties begin here. These can be recognized by the @Prop decorator. The truthy 'reflect' property of the decorator object payload ensures that such property will be also available in HTML, and not just when consuming Stencil components from other components.
+          * The `level` property allows users to indicate what header hierarchy this element is. It mus take a number from `1` to `6`.
          */
-        "level": 1 | 2 | 3 | 4 | 5 | 6;
+        "level": number;
+        /**
+          * Provides support for implementing horizontal alignment to the text contained in the header.
+         */
         "textAlign": 'left' | 'right' | 'center';
     }
 }
@@ -48,9 +51,12 @@ declare namespace LocalJSX {
     }
     interface HsHeader {
         /**
-          * Component public properties begin here. These can be recognized by the @Prop decorator. The truthy 'reflect' property of the decorator object payload ensures that such property will be also available in HTML, and not just when consuming Stencil components from other components.
+          * The `level` property allows users to indicate what header hierarchy this element is. It mus take a number from `1` to `6`.
          */
-        "level"?: 1 | 2 | 3 | 4 | 5 | 6;
+        "level"?: number;
+        /**
+          * Provides support for implementing horizontal alignment to the text contained in the header.
+         */
         "textAlign"?: 'left' | 'right' | 'center';
     }
     interface IntrinsicElements {

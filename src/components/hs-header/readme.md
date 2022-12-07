@@ -7,16 +7,20 @@
 
 ## Overview
 
-The component decorator, part of the TypeSCript built-in capabilities
-and currently an stage 3 proposal in the tC39 committee. More info:
-https://github.com/tc39/proposal-decorators
+Heading component, with support for header elements spanning from `H1` to `H6`, and custom alignment.
+Its convenience for pointing out document sections makes it one of the most consumed
+components in our Design System.
+### Example:
+```html
+<hs-heading level="a" text-align="center">Section name</hs-heading>
+```
 
 ## Properties
 
-| Property    | Attribute    | Description                                                                                                                                                                                                                                                                            | Type                            | Default     |
-| ----------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ----------- |
-| `level`     | `level`      | Component public properties begin here. These can be recognized by the @Prop decorator. The truthy 'reflect' property of the decorator object payload ensures that such property will be also available in HTML, and not just when consuming Stencil components from other components. | `1 \| 2 \| 3 \| 4 \| 5 \| 6`    | `undefined` |
-| `textAlign` | `text-align` |                                                                                                                                                                                                                                                                                        | `"center" \| "left" \| "right"` | `'left'`    |
+| Property    | Attribute    | Description                                                                                                                | Type                            | Default  |
+| ----------- | ------------ | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | -------- |
+| `level`     | `level`      | The `level` property allows users to indicate what header hierarchy this element is. It mus take a number from `1` to `6`. | `number`                        | `1`      |
+| `textAlign` | `text-align` | Provides support for implementing horizontal alignment to the text contained in the header.                                | `"center" \| "left" \| "right"` | `'left'` |
 
 
 ----------------------------------------------

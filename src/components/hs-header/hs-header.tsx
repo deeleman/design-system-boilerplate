@@ -11,9 +11,27 @@ const ariaAttributes = [
 ];
 
 /**
- * The component decorator, part of the TypeSCript built-in capabilities
- * and currently an stage 3 proposal in the tC39 committee. More info:
- * https://github.com/tc39/proposal-decorators
+ * The component starts with the @Component decorator, part of the TypeScript built-in capabilities
+ * and currently an stage 3 proposal in the TC39 committee. More info:
+ * https://github.com/tc39/proposal-decorators.
+ * 
+ * Please check out the comment blocks on top the component and its props. Whatever content we place
+ * right above the @Component decorator will become the actual description of teh component in
+ * the generated documentation. Such blocks do support markdown syntax, so you can provide rich descriptions
+ * right on the code. 
+ * 
+ * Same applies to @Prop decorators: Whatever text we place right on top of each Prop will eventually be included
+ * in the properties output table displayed in the README docs generated upon building the project.
+ */
+
+/**
+ * Heading component, with support for header elements spanning from `H1` to `H6`, and custom alignment.
+ * Its convenience for pointing out document sections makes it one of the most consumed
+ * components in our Design System.
+ * ### Example:
+ * ```html
+ * <hs-heading level="a" text-align="center">Section name</hs-heading>
+ * ```
  */
 @Component({
   // The component decorator object payload is documented at https://stenciljs.com/docs/component
@@ -35,11 +53,20 @@ export class HsHeader {
    * These can be recognized by the @Prop decorator. The truthy 'reflect'
    * property of the decorator object payload ensures that such property
    * will be also available in HTML, and not just when consuming Stencil
-   * components from other components.
+   * components from other components. 
+   * IMPORTANT: 
+   */
+
+  /**
+   * The `level` property allows users to indicate what header hierarchy this element is.
+   * It mus take a number from `1` to `6`.
    */
   @Prop({ reflect: true })
-  level: 1 | 2 | 3 | 4 | 5 | 6; // This annotation is a TypeScript union type
+  level: number = 1; // This annotation is a TypeScript union type, defaulting to 1
   
+  /**
+   * Provides support for implementing horizontal alignment to the text contained in the header.
+   */
   @Prop({ reflect: true })
   textAlign: 'left' | 'right' | 'center' = 'left'; // This annotation is a TypeScript union type with a default value set to 'left'
 

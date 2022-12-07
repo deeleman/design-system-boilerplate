@@ -10,6 +10,13 @@ export namespace Components {
         "size": string;
         "variant": string;
     }
+    interface MdsParagraph {
+        "fontWeight": string;
+        "margin": number;
+        "textstyle": string;
+        "theme": string;
+        "variant": string;
+    }
 }
 export interface HsButtonCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -22,8 +29,15 @@ declare global {
         prototype: HTMLHsButtonElement;
         new (): HTMLHsButtonElement;
     };
+    interface HTMLMdsParagraphElement extends Components.MdsParagraph, HTMLStencilElement {
+    }
+    var HTMLMdsParagraphElement: {
+        prototype: HTMLMdsParagraphElement;
+        new (): HTMLMdsParagraphElement;
+    };
     interface HTMLElementTagNameMap {
         "hs-button": HTMLHsButtonElement;
+        "mds-paragraph": HTMLMdsParagraphElement;
     }
 }
 declare namespace LocalJSX {
@@ -32,8 +46,16 @@ declare namespace LocalJSX {
         "size"?: string;
         "variant"?: string;
     }
+    interface MdsParagraph {
+        "fontWeight"?: string;
+        "margin"?: number;
+        "textstyle"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
     interface IntrinsicElements {
         "hs-button": HsButton;
+        "mds-paragraph": MdsParagraph;
     }
 }
 export { LocalJSX as JSX };
@@ -41,6 +63,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "hs-button": LocalJSX.HsButton & JSXBase.HTMLAttributes<HTMLHsButtonElement>;
+            "mds-paragraph": LocalJSX.MdsParagraph & JSXBase.HTMLAttributes<HTMLMdsParagraphElement>;
         }
     }
 }

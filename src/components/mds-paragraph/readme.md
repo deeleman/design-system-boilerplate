@@ -9,11 +9,11 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
-| `fontWeight` | `font-weight` |             | `string` | `"medium"`  |
-| `margin`     | `margin`      |             | `number` | `20`        |
-| `textstyle`  | `textstyle`   |             | `string` | `"italics"` |
-| `theme`      | `theme`       |             | `string` | `"light"`   |
-| `variant`    | `variant`     |             | `string` | `"h3"`      |
+| `fontWeight` | `font-weight` |             | `string` | `'medium'`  |
+| `margin`     | `margin`      |             | `number` | `10`        |
+| `textstyle`  | `textstyle`   |             | `string` | `'italics'` |
+| `theme`      | `theme`       |             | `string` | `'light'`   |
+| `variant`    | `variant`     |             | `string` | `'p'`       |
 
 
 ----------------------------------------------

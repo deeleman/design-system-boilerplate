@@ -3,33 +3,46 @@ import { Component, Host, h, Prop } from '@stencil/core';
 @Component({
   tag: 'mds-paragraph',
   styleUrl: 'mds-paragraph.css',
-  shadow: true,
+  scoped: true,
 })
 export class MdsParagraph {
+  @Prop()
+  theme: string = 'light';
 
   @Prop()
-  theme = "light";
+  fontWeight: string = 'medium';
 
   @Prop()
-  fontWeight = "medium";
+  variant: string = 'p';
 
   @Prop()
-  variant = "h3";
+  textstyle: string = 'italics';
 
   @Prop()
-  textstyle = "italics";
+  margin: number = 10;
 
-  @Prop()
-  margin = 20;
+  /**
+   * This getter will apply all the necessary classes to the component
+   */
+  private get applyComponentClasses(): string {
+    let classes = '';
+
+    classes += this.theme != undefined ? 'theme-' + this.theme : ' light';
+    classes += this.fontWeight != undefined ? ' text-' + this.fontWeight : ' medium';
+    classes += this.variant != undefined ? ' text-variant-' + this.variant : ' p';
+    classes += this.textstyle != undefined ? ' text-style-' + this.textstyle : ' normal';
+    classes += this.margin != undefined ? ' margin-' + this.margin : 10;
+
+    return classes;
+  }
 
   render() {
     return (
       <Host>
-        <p class={`theme-${this.theme} text-style-${this.textstyle}`}>
+        <p class={this.applyComponentClasses}>
           <slot></slot>
         </p>
       </Host>
     );
   }
-
 }

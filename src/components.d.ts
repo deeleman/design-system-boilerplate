@@ -10,6 +10,13 @@ export namespace Components {
         "size": string;
         "variant": string;
     }
+    interface HsHeader {
+        /**
+          * Component public properties begin here. These can be recognized by the @Prop decorator. The truthy 'reflect' property of the decorator object payload ensures that such property will be also available in HTML, and not just when consuming Stencil components from other components.
+         */
+        "level": 1 | 2 | 3 | 4 | 5 | 6;
+        "textAlign": 'left' | 'right' | 'center';
+    }
 }
 export interface HsButtonCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -22,8 +29,15 @@ declare global {
         prototype: HTMLHsButtonElement;
         new (): HTMLHsButtonElement;
     };
+    interface HTMLHsHeaderElement extends Components.HsHeader, HTMLStencilElement {
+    }
+    var HTMLHsHeaderElement: {
+        prototype: HTMLHsHeaderElement;
+        new (): HTMLHsHeaderElement;
+    };
     interface HTMLElementTagNameMap {
         "hs-button": HTMLHsButtonElement;
+        "hs-header": HTMLHsHeaderElement;
     }
 }
 declare namespace LocalJSX {
@@ -32,8 +46,16 @@ declare namespace LocalJSX {
         "size"?: string;
         "variant"?: string;
     }
+    interface HsHeader {
+        /**
+          * Component public properties begin here. These can be recognized by the @Prop decorator. The truthy 'reflect' property of the decorator object payload ensures that such property will be also available in HTML, and not just when consuming Stencil components from other components.
+         */
+        "level"?: 1 | 2 | 3 | 4 | 5 | 6;
+        "textAlign"?: 'left' | 'right' | 'center';
+    }
     interface IntrinsicElements {
         "hs-button": HsButton;
+        "hs-header": HsHeader;
     }
 }
 export { LocalJSX as JSX };
@@ -41,6 +63,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "hs-button": LocalJSX.HsButton & JSXBase.HTMLAttributes<HTMLHsButtonElement>;
+            "hs-header": LocalJSX.HsHeader & JSXBase.HTMLAttributes<HTMLHsHeaderElement>;
         }
     }
 }

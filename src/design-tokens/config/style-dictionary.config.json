@@ -1,11 +1,11 @@
 {
   "source": [
-    "**/*.tokens.json"
+    "src/design-tokens/json/**/*.json"
   ],
   "platforms": {
     "css": {
       "transformGroup": "css",
-      "prefix": "hs",
+      "prefix": "replay",
       "buildPath": "src/design-tokens/css/",
       "files": [
         {

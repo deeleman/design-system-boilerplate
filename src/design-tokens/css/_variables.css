@@ -1,17 +1,78 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Dec 2022 02:44:14 GMT
+ * Generated on Thu, 08 Dec 2022 13:53:54 GMT
  */
 
 :root {
-  --hs-spacing-large: [object Object];
-  --hs-spacing-small: [object Object];
+  --hs-color-foundation-ui-green-ui-green-light: #e9f8ee;
+  --hs-color-foundation-ui-green-ui-green-light-hover: #ddf5e6;
+  --hs-color-foundation-ui-green-ui-green-light-active: #b9e9ca;
+  --hs-color-foundation-ui-green-ui-green: #1eb955;
+  --hs-color-foundation-ui-green-ui-green-hover: #1ba74d;
+  --hs-color-foundation-ui-green-ui-green-active: #189444;
+  --hs-color-foundation-ui-green-ui-green-dark: #178b40;
+  --hs-color-foundation-ui-green-ui-green-dark-hover: #126f33;
+  --hs-color-foundation-ui-green-ui-green-dark-active: #0d5326;
+  --hs-color-foundation-neutral-pure-white: #ffffff; /* Pure White */
+  --hs-color-foundation-neutral-white-25: #fdfdfd;
+  --hs-color-foundation-neutral-white-50: #f7f7f7;
+  --hs-color-foundation-neutral-white-100: #f3f3f3;
+  --hs-color-foundation-neutral-gray-25: #e0e1e1;
+  --hs-color-foundation-neutral-gray-50: #cccdcd;
+  --hs-color-foundation-neutral-gray-75: #a3a4a5;
+  --hs-color-foundation-neutral-gray-100: #7a7c7e;
+  --hs-color-foundation-neutral-gray-200: #696c6e;
+  --hs-color-foundation-neutral-black-25: #515356;
+  --hs-color-foundation-neutral-black-50: #4b4d50;
+  --hs-color-foundation-neutral-black-75: #424548;
+  --hs-color-foundation-neutral-black-100: #323538;
+  --hs-color-foundation-neutral-pure-blak: #000000; /* Pure Black */
+  --hs-color-foundation-blue-blue-50: #eef5fe;
+  --hs-color-foundation-blue-blue-75: #b8d6fa;
+  --hs-color-foundation-blue-blue-100: #9ac5f9;
+  --hs-color-foundation-blue-blue-200: #6facf6;
+  --hs-color-foundation-blue-blue-300: #519bf4;
+  --hs-color-foundation-blue-blue-400: #396dab;
+  --hs-color-foundation-blue-blue-500: #315f95;
+  --hs-color-foundation-pink-pink-50: #fef1f6;
+  --hs-color-foundation-pink-pink-75: #fbc6d9;
+  --hs-color-foundation-pink-pink-100: #faaec9;
+  --hs-color-foundation-pink-pink-200: #f88bb2;
+  --hs-color-foundation-pink-pink-300: #f673a2;
+  --hs-color-foundation-pink-pink-400: #ac5171;
+  --hs-color-foundation-pink-pink-500: #964663;
+  --hs-color-foundation-yellow-yellow-50: #fefcea;
+  --hs-color-foundation-yellow-yellow-75: #fcf4a8;
+  --hs-color-foundation-yellow-yellow-100: #faef85;
+  --hs-color-foundation-yellow-yellow-200: #f8e850;
+  --hs-color-foundation-yellow-yellow-300: #f7e32c;
+  --hs-color-foundation-yellow-yellow-400: #ad9f1f;
+  --hs-color-foundation-yellow-yellow-500: #978a1b;
+  --hs-color-foundation-rose-rose-50: #ffedeb;
+  --hs-color-foundation-rose-rose-75: #ffb3ab;
+  --hs-color-foundation-rose-rose-100: #ff9489;
+  --hs-color-foundation-red-red-50: #ff6556;
+  --hs-color-foundation-red-red-75: #ff4633;
+  --hs-color-foundation-red-red-100: #b33124;
+  --hs-color-foundation-red-red-200: #9c2b1f;
+  --hs-color-spotify-brand-brand-palette-pastel-pink: #ffcdd3; /* Spotify Brand Palette Color, Pastel Pink */
+  --hs-color-spotify-brand-brand-palette-beige: #fbf0ef; /* Spotify Brand Palette Color, Beige */
+  --hs-color-spotify-brand-brand-palette-pastel-blue: #a1c3d3; /* Spotify Brand Palette Color, Pastel Blue */
+  --hs-color-spotify-brand-brand-palette-lime-green: #cdf564; /* Spotify Brand Palette Color, Lime Green */
+  --hs-color-spotify-brand-brand-palette-pastel-orange: #ffc665; /* Spotify Brand Palette Color, Pastel Orange */
+  --hs-color-spotify-brand-brand-palette-blue: #519bf4; /* Spotify Brand Palette, Blue */
+  --hs-color-spotify-brand-brand-palette-red: #ff4633; /* Spotify Brand Palette, Red */
+  --hs-color-spotify-brand-brand-palette-pink: #f673a2; /* Spotify Brand Palette, Pink */
+  --hs-color-spotify-brand-brand-palette-yellow: #f7e32c; /* Spotify Brand Palette, Yellow */
+  --hs-color-spotify-brand-spotify-green-spotify-green: #1ed860;
   --hs-color-primary: #8f00ff;
   --hs-color-error: #ff0000;
   --hs-color-success: #00b53d;
   --hs-color-warning: #9cc300;
   --hs-color-body: #e3e3e3;
   --hs-color-inverse-body: #f2f2f2;
+  --hs-spacing-large: [object Object];
+  --hs-spacing-small: [object Object];
   --hs-font-heading-1: [object Object];
   --hs-font-heading-2: [object Object];
   --hs-font-body: [object Object];
@@ -48,4 +109,30 @@
   --hs-typography-body-paragraph-indent: 0;
   --hs-typography-body-paragraph-spacing: 0;
   --hs-typography-body-text-case: none;
+  --hs-typography-typography-headers-displayxl-400: [object Object]; /* H1, Display, or XL Title in Regular */
+  --hs-typography-typography-headers-displayxl-700: [object Object]; /* H1, Display, or XL Title in Bold */
+  --hs-typography-typography-headers-displayxl-900: [object Object]; /* H1, Display, or XL Title in Extra Bold */
+  --hs-typography-typography-headers-displaylg-400: [object Object]; /* H2, Large Display, or Main Section Title in Regular */
+  --hs-typography-typography-headers-displaylg-700: [object Object]; /* H2, Large Display, or Main Section Title in Bold */
+  --hs-typography-typography-headers-displaylg-900: [object Object]; /* H2, Large Display, or Main Section Title in Extra Bold */
+  --hs-typography-typography-headers-subheading1-400: [object Object]; /* H3, Subheading Variation 1 in Regular */
+  --hs-typography-typography-headers-subheading1-900: [object Object]; /* H3, Subheading Variation 1 in Extra Bold */
+  --hs-typography-typography-headers-subheading2-400: [object Object]; /* H4, Subheading Variation 2 in Regular */
+  --hs-typography-typography-headers-subheading2-700: [object Object]; /* H4, Subheading Variation 2 in Bold */
+  --hs-typography-typography-headers-subheading2-900: [object Object]; /* H4, Subheading Variation 2 in Extra Bold */
+  --hs-typography-typography-headers-subheading3-400: [object Object]; /* H5, Subheading Variation 3 in Regular */
+  --hs-typography-typography-headers-subheading4-700: [object Object]; /* H5, Subheading Variation 3 in Bold */
+  --hs-typography-typography-headers-subheading4-900: [object Object]; /* H5, Subheading Variation 3 in Extra Bold */
+  --hs-typography-typography-text-body-400: [object Object]; /* Body Text in Regular */
+  --hs-typography-typography-text-blockquote-400: [object Object]; /* Blockquote in Regular */
+  --hs-typography-typography-text-blockquote-700: [object Object]; /* Blockquote in Bold */
+  --hs-typography-typography-text-blockquote-900: [object Object]; /* Blockquote in Extra Bold */
+  --hs-typography-typography-text-body-700: [object Object]; /* Body Text in Bold */
+  --hs-typography-typography-text-body-900: [object Object]; /* Body Text in Extra Bold */
+  --hs-typography-typography-text-caption-400: [object Object]; /* Caption Text in Regular */
+  --hs-typography-typography-text-caption-700: [object Object]; /* Caption Text in Bold */
+  --hs-typography-typography-text-caption-900: [object Object]; /* Caption Text in Extra Bold */
+  --hs-typography-typography-text-endnote-400: [object Object]; /* Endnote Text in Regular */
+  --hs-typography-typography-text-endnote-700: [object Object]; /* Endnote Text in Bold */
+  --hs-typography-typography-text-endnote-900: [object Object]; /* Endnote Text in Extra Bold */
 }

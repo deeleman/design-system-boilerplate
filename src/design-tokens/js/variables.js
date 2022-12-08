@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 08 Dec 2022 13:53:54 GMT
+ * Generated on Thu, 08 Dec 2022 13:59:09 GMT
  */
 
 export const ColorFoundationUiGreenUiGreenLight = "#e9f8ee";

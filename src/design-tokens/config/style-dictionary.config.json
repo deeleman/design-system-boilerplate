@@ -5,7 +5,7 @@
   "platforms": {
     "css": {
       "transformGroup": "css",
-      "prefix": "hs",
+      "prefix": "replay",
       "buildPath": "src/design-tokens/css/",
       "files": [
         {

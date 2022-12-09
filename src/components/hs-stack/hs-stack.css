@@ -1,0 +1,11 @@
+.hs-stack {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dashed red;
+}
+
+.hs-stack > * {
+  flex-grow: 1;
+  display: block;
+}

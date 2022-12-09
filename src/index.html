@@ -8,26 +8,28 @@
     <script type="module" src="/build/design-system.esm.js"></script>
     <script nomodule src="/build/design-system.js"></script>
     <link rel="stylesheet" href="/build/design-system.css" />
+    <style>
+      .card {
+        height: 60px;
+      }
+      .card:nth-child(even) {
+        background-color: blueviolet;
+      }
+      .card:nth-child(odd) {
+        background-color: darkolivegreen;
+      }
+    </style>
   </head>
   <body>
-    <hs-header
-      aria-role="heading"
-      level="1">
-        My custom header
-      </hs-header>
-    <hs-header
-      aria-role="heading"
-      text-align="left"
-      aria-label="My custom header"
-      level="2">
-        My H2 header
-      </hs-header>
-    <hs-header
-      aria-role="heading"
-      text-align="right"
-      aria-label="Another custom header"
-      level="3">
-        My H3 header
-      </hs-header>
+    <hs-stack gap="small" orientation="horizontal">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </hs-stack>
   </body>
   </html>

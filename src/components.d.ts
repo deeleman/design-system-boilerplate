@@ -10,6 +10,11 @@ export namespace Components {
         "size": string;
         "variant": string;
     }
+    interface HsGrid {
+        "columns": number;
+    }
+    interface HsGridColumn {
+    }
     interface HsHeader {
         /**
           * The `level` property allows users to indicate what header hierarchy this element is. It mus take a number from `1` to `6`.
@@ -19,6 +24,10 @@ export namespace Components {
           * Provides support for implementing horizontal alignment to the text contained in the header.
          */
         "textAlign": 'left' | 'right' | 'center';
+    }
+    interface HsStack {
+        "gap": 'small' | 'large';
+        "orientation": 'vertical' | 'horizontal';
     }
 }
 export interface HsButtonCustomEvent<T> extends CustomEvent<T> {
@@ -32,15 +41,36 @@ declare global {
         prototype: HTMLHsButtonElement;
         new (): HTMLHsButtonElement;
     };
+    interface HTMLHsGridElement extends Components.HsGrid, HTMLStencilElement {
+    }
+    var HTMLHsGridElement: {
+        prototype: HTMLHsGridElement;
+        new (): HTMLHsGridElement;
+    };
+    interface HTMLHsGridColumnElement extends Components.HsGridColumn, HTMLStencilElement {
+    }
+    var HTMLHsGridColumnElement: {
+        prototype: HTMLHsGridColumnElement;
+        new (): HTMLHsGridColumnElement;
+    };
     interface HTMLHsHeaderElement extends Components.HsHeader, HTMLStencilElement {
     }
     var HTMLHsHeaderElement: {
         prototype: HTMLHsHeaderElement;
         new (): HTMLHsHeaderElement;
     };
+    interface HTMLHsStackElement extends Components.HsStack, HTMLStencilElement {
+    }
+    var HTMLHsStackElement: {
+        prototype: HTMLHsStackElement;
+        new (): HTMLHsStackElement;
+    };
     interface HTMLElementTagNameMap {
         "hs-button": HTMLHsButtonElement;
+        "hs-grid": HTMLHsGridElement;
+        "hs-grid-column": HTMLHsGridColumnElement;
         "hs-header": HTMLHsHeaderElement;
+        "hs-stack": HTMLHsStackElement;
     }
 }
 declare namespace LocalJSX {
@@ -48,6 +78,11 @@ declare namespace LocalJSX {
         "onClicked"?: (event: HsButtonCustomEvent<any>) => void;
         "size"?: string;
         "variant"?: string;
+    }
+    interface HsGrid {
+        "columns"?: number;
+    }
+    interface HsGridColumn {
     }
     interface HsHeader {
         /**
@@ -59,9 +94,16 @@ declare namespace LocalJSX {
          */
         "textAlign"?: 'left' | 'right' | 'center';
     }
+    interface HsStack {
+        "gap"?: 'small' | 'large';
+        "orientation"?: 'vertical' | 'horizontal';
+    }
     interface IntrinsicElements {
         "hs-button": HsButton;
+        "hs-grid": HsGrid;
+        "hs-grid-column": HsGridColumn;
         "hs-header": HsHeader;
+        "hs-stack": HsStack;
     }
 }
 export { LocalJSX as JSX };
@@ -69,7 +111,10 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "hs-button": LocalJSX.HsButton & JSXBase.HTMLAttributes<HTMLHsButtonElement>;
+            "hs-grid": LocalJSX.HsGrid & JSXBase.HTMLAttributes<HTMLHsGridElement>;
+            "hs-grid-column": LocalJSX.HsGridColumn & JSXBase.HTMLAttributes<HTMLHsGridColumnElement>;
             "hs-header": LocalJSX.HsHeader & JSXBase.HTMLAttributes<HTMLHsHeaderElement>;
+            "hs-stack": LocalJSX.HsStack & JSXBase.HTMLAttributes<HTMLHsStackElement>;
         }
     }
 }

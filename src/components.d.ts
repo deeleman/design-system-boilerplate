@@ -20,6 +20,16 @@ export namespace Components {
          */
         "textAlign": 'left' | 'right' | 'center';
     }
+    interface HsStack {
+        /**
+          * The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element.
+         */
+        "gap": 'large' | 'small';
+        /**
+          * The `orientation` property sets the direction for the flow, either vertical or horizontal.
+         */
+        "orientation": 'vertical' | 'horizontal';
+    }
 }
 export interface HsButtonCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -38,9 +48,16 @@ declare global {
         prototype: HTMLHsHeaderElement;
         new (): HTMLHsHeaderElement;
     };
+    interface HTMLHsStackElement extends Components.HsStack, HTMLStencilElement {
+    }
+    var HTMLHsStackElement: {
+        prototype: HTMLHsStackElement;
+        new (): HTMLHsStackElement;
+    };
     interface HTMLElementTagNameMap {
         "hs-button": HTMLHsButtonElement;
         "hs-header": HTMLHsHeaderElement;
+        "hs-stack": HTMLHsStackElement;
     }
 }
 declare namespace LocalJSX {
@@ -59,9 +76,20 @@ declare namespace LocalJSX {
          */
         "textAlign"?: 'left' | 'right' | 'center';
     }
+    interface HsStack {
+        /**
+          * The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element.
+         */
+        "gap"?: 'large' | 'small';
+        /**
+          * The `orientation` property sets the direction for the flow, either vertical or horizontal.
+         */
+        "orientation"?: 'vertical' | 'horizontal';
+    }
     interface IntrinsicElements {
         "hs-button": HsButton;
         "hs-header": HsHeader;
+        "hs-stack": HsStack;
     }
 }
 export { LocalJSX as JSX };
@@ -70,6 +98,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "hs-button": LocalJSX.HsButton & JSXBase.HTMLAttributes<HTMLHsButtonElement>;
             "hs-header": LocalJSX.HsHeader & JSXBase.HTMLAttributes<HTMLHsHeaderElement>;
+            "hs-stack": LocalJSX.HsStack & JSXBase.HTMLAttributes<HTMLHsStackElement>;
         }
     }
 }

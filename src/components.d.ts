@@ -26,7 +26,13 @@ export namespace Components {
         "textAlign": 'left' | 'right' | 'center';
     }
     interface HsStack {
-        "gap": 'small' | 'large';
+        /**
+          * The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element.
+         */
+        "gap": 'large' | 'small';
+        /**
+          * The `orientation` property sets the direction for the flow, either vertical or horizontal.
+         */
         "orientation": 'vertical' | 'horizontal';
     }
 }
@@ -95,7 +101,13 @@ declare namespace LocalJSX {
         "textAlign"?: 'left' | 'right' | 'center';
     }
     interface HsStack {
-        "gap"?: 'small' | 'large';
+        /**
+          * The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element.
+         */
+        "gap"?: 'large' | 'small';
+        /**
+          * The `orientation` property sets the direction for the flow, either vertical or horizontal.
+         */
         "orientation"?: 'vertical' | 'horizontal';
     }
     interface IntrinsicElements {

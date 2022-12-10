@@ -8,32 +8,16 @@
     <script type="module" src="/build/design-system.esm.js"></script>
     <script nomodule src="/build/design-system.js"></script>
     <link rel="stylesheet" href="/build/design-system.css" />
-    <style>
-      .stack-item {
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-      }
-      .stack-item:nth-child(even) {
-        background-color: brown;
-      }
-      .stack-item:nth-child(odd) {
-        background-color: cornflowerblue;
-      }
-    </style>
   </head>
   <body>
-    <hs-stack gutter="small" orientation="horizontal">
-      <span class="stack-item span-1"></span>
-      <span class="stack-item span-2"></span>
-      <span class="stack-item span-3"></span>
-      <span class="stack-item span-4"></span>
-      <span class="stack-item span-5"></span>
-      <span class="stack-item span-6"></span>
-      <span class="stack-item span-7"></span>
-      <span class="stack-item span-8"></span>
-      <span class="stack-item span-9"></span>
-      <span class="stack-item span-10"></span>
-    </hs-stack>
+    <h3>Fieldset A</h3>
+    <hs-radio-group name="foo" selected-value="5">
+      <hs-radio name="foo" value="1">Option 1</hs-radio>
+      <hs-radio name="foo" value="2">Option 2</hs-radio>
+      <hs-radio name="foo" value="3">Option 3</hs-radio>
+      <hs-radio name="foo" value="4">Option 4</hs-radio>
+      <hs-radio name="foo" value="5">Option 5</hs-radio>
+    </hs-radio-group>
+
   </body>
   </html>

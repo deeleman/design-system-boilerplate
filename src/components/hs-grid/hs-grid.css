@@ -1,0 +1,19 @@
+.hs-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.hs-grid > * {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border: 1px dashed red;
+}
+
+.hs-grid-buffer {
+  display: block;
+  flex-grow: 3;
+}

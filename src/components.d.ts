@@ -10,6 +10,11 @@ export namespace Components {
         "size": string;
         "variant": string;
     }
+    interface HsGrid {
+        "columns": number;
+    }
+    interface HsGridColumn {
+    }
     interface HsHeader {
         /**
           * The `level` property allows users to indicate what header hierarchy this element is. It mus take a number from `1` to `6`.
@@ -20,6 +25,30 @@ export namespace Components {
          */
         "textAlign": 'left' | 'right' | 'center';
     }
+    interface HsRadio {
+        /**
+          * The unique name of the radio button group. Must match the `name` attribute of its parent `<hs-radio-group />`.
+         */
+        "name": any;
+        /**
+          * The particular value of this radio input item.
+         */
+        "value": any;
+    }
+    interface HsRadioGroup {
+        /**
+          * Unique name to group these options under. Child radio inputs must feature the same `name` attribute value.
+         */
+        "name": any;
+        /**
+          * Based in the `Orientation` ambient type, will display the radio group stacked vertically or horizontally. See {@link Orientation}
+         */
+        "orientation": Orientation;
+        /**
+          * Default value, which will preselect the matching radio element.
+         */
+        "selectedValue": any;
+    }
     interface HsStack {
         /**
           * The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element.
@@ -28,7 +57,7 @@ export namespace Components {
         /**
           * The `orientation` property sets the direction for the flow, either vertical or horizontal.
          */
-        "orientation": 'vertical' | 'horizontal';
+        "orientation": Orientation;
     }
 }
 export interface HsButtonCustomEvent<T> extends CustomEvent<T> {
@@ -42,11 +71,35 @@ declare global {
         prototype: HTMLHsButtonElement;
         new (): HTMLHsButtonElement;
     };
+    interface HTMLHsGridElement extends Components.HsGrid, HTMLStencilElement {
+    }
+    var HTMLHsGridElement: {
+        prototype: HTMLHsGridElement;
+        new (): HTMLHsGridElement;
+    };
+    interface HTMLHsGridColumnElement extends Components.HsGridColumn, HTMLStencilElement {
+    }
+    var HTMLHsGridColumnElement: {
+        prototype: HTMLHsGridColumnElement;
+        new (): HTMLHsGridColumnElement;
+    };
     interface HTMLHsHeaderElement extends Components.HsHeader, HTMLStencilElement {
     }
     var HTMLHsHeaderElement: {
         prototype: HTMLHsHeaderElement;
         new (): HTMLHsHeaderElement;
+    };
+    interface HTMLHsRadioElement extends Components.HsRadio, HTMLStencilElement {
+    }
+    var HTMLHsRadioElement: {
+        prototype: HTMLHsRadioElement;
+        new (): HTMLHsRadioElement;
+    };
+    interface HTMLHsRadioGroupElement extends Components.HsRadioGroup, HTMLStencilElement {
+    }
+    var HTMLHsRadioGroupElement: {
+        prototype: HTMLHsRadioGroupElement;
+        new (): HTMLHsRadioGroupElement;
     };
     interface HTMLHsStackElement extends Components.HsStack, HTMLStencilElement {
     }
@@ -56,7 +109,11 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "hs-button": HTMLHsButtonElement;
+        "hs-grid": HTMLHsGridElement;
+        "hs-grid-column": HTMLHsGridColumnElement;
         "hs-header": HTMLHsHeaderElement;
+        "hs-radio": HTMLHsRadioElement;
+        "hs-radio-group": HTMLHsRadioGroupElement;
         "hs-stack": HTMLHsStackElement;
     }
 }
@@ -65,6 +122,11 @@ declare namespace LocalJSX {
         "onClicked"?: (event: HsButtonCustomEvent<any>) => void;
         "size"?: string;
         "variant"?: string;
+    }
+    interface HsGrid {
+        "columns"?: number;
+    }
+    interface HsGridColumn {
     }
     interface HsHeader {
         /**
@@ -76,6 +138,30 @@ declare namespace LocalJSX {
          */
         "textAlign"?: 'left' | 'right' | 'center';
     }
+    interface HsRadio {
+        /**
+          * The unique name of the radio button group. Must match the `name` attribute of its parent `<hs-radio-group />`.
+         */
+        "name"?: any;
+        /**
+          * The particular value of this radio input item.
+         */
+        "value"?: any;
+    }
+    interface HsRadioGroup {
+        /**
+          * Unique name to group these options under. Child radio inputs must feature the same `name` attribute value.
+         */
+        "name"?: any;
+        /**
+          * Based in the `Orientation` ambient type, will display the radio group stacked vertically or horizontally. See {@link Orientation}
+         */
+        "orientation"?: Orientation;
+        /**
+          * Default value, which will preselect the matching radio element.
+         */
+        "selectedValue"?: any;
+    }
     interface HsStack {
         /**
           * The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element.
@@ -84,11 +170,15 @@ declare namespace LocalJSX {
         /**
           * The `orientation` property sets the direction for the flow, either vertical or horizontal.
          */
-        "orientation"?: 'vertical' | 'horizontal';
+        "orientation"?: Orientation;
     }
     interface IntrinsicElements {
         "hs-button": HsButton;
+        "hs-grid": HsGrid;
+        "hs-grid-column": HsGridColumn;
         "hs-header": HsHeader;
+        "hs-radio": HsRadio;
+        "hs-radio-group": HsRadioGroup;
         "hs-stack": HsStack;
     }
 }
@@ -97,7 +187,11 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "hs-button": LocalJSX.HsButton & JSXBase.HTMLAttributes<HTMLHsButtonElement>;
+            "hs-grid": LocalJSX.HsGrid & JSXBase.HTMLAttributes<HTMLHsGridElement>;
+            "hs-grid-column": LocalJSX.HsGridColumn & JSXBase.HTMLAttributes<HTMLHsGridColumnElement>;
             "hs-header": LocalJSX.HsHeader & JSXBase.HTMLAttributes<HTMLHsHeaderElement>;
+            "hs-radio": LocalJSX.HsRadio & JSXBase.HTMLAttributes<HTMLHsRadioElement>;
+            "hs-radio-group": LocalJSX.HsRadioGroup & JSXBase.HTMLAttributes<HTMLHsRadioGroupElement>;
             "hs-stack": LocalJSX.HsStack & JSXBase.HTMLAttributes<HTMLHsStackElement>;
         }
     }

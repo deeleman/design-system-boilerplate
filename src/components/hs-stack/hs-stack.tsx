@@ -26,7 +26,7 @@ export class HsStack {
    * either vertical or horizontal.
    */
   @Prop({ reflect: true })
-  orientation: 'vertical' | 'horizontal'  = 'vertical';
+  orientation: Orientation  = 'vertical';
 
   /**
    * The `gap` property sets the spacing in between elements, and has no effect

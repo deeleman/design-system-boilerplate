@@ -20,11 +20,26 @@ flow capabilities for all its children components and elements.
 
 ## Properties
 
-| Property      | Attribute     | Description                                                                                                    | Type                         | Default      |
-| ------------- | ------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------ |
-| `gap`         | `gap`         | The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element. | `"large" \| "small"`         | `'small'`    |
-| `orientation` | `orientation` | The `orientation` property sets the direction for the flow, either vertical or horizontal.                     | `"horizontal" \| "vertical"` | `'vertical'` |
+| Property      | Attribute     | Description                                                                                                    | Type                                                                       | Default      |
+| ------------- | ------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------ |
+| `gap`         | `gap`         | The `gap` property sets the spacing in between elements, and has no effect in the leading or trailing element. | `"large" \| "small"`                                                       | `'small'`    |
+| `orientation` | `orientation` | The `orientation` property sets the direction for the flow, either vertical or horizontal.                     | `"horizontal" \| "horizontal-reverse" \| "vertical" \| "vertical-reverse"` | `'vertical'` |
 
+
+## Dependencies
+
+### Used by
+
+ - [hs-radio](../hs-radio-group)
+ - [hs-radio-group](../hs-radio-group)
+
+### Graph
+```mermaid
+graph TD;
+  hs-radio --> hs-stack
+  hs-radio-group --> hs-stack
+  style hs-stack fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

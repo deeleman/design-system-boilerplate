@@ -59,10 +59,27 @@ export namespace Components {
          */
         "orientation": Orientation;
     }
+    interface HsTab {
+        "toggleSelected": (selected: boolean) => Promise<void>;
+    }
+    interface HsTabList {
+    }
+    interface HsTabPanel {
+        "toggleSelected": (selected: boolean) => Promise<void>;
+    }
+    interface HsTabPanels {
+    }
+    interface HsTabs {
+        "selectedIndex": number;
+    }
 }
 export interface HsButtonCustomEvent<T> extends CustomEvent<T> {
     detail: T;
     target: HTMLHsButtonElement;
+}
+export interface HsTabCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLHsTabElement;
 }
 declare global {
     interface HTMLHsButtonElement extends Components.HsButton, HTMLStencilElement {
@@ -107,6 +124,36 @@ declare global {
         prototype: HTMLHsStackElement;
         new (): HTMLHsStackElement;
     };
+    interface HTMLHsTabElement extends Components.HsTab, HTMLStencilElement {
+    }
+    var HTMLHsTabElement: {
+        prototype: HTMLHsTabElement;
+        new (): HTMLHsTabElement;
+    };
+    interface HTMLHsTabListElement extends Components.HsTabList, HTMLStencilElement {
+    }
+    var HTMLHsTabListElement: {
+        prototype: HTMLHsTabListElement;
+        new (): HTMLHsTabListElement;
+    };
+    interface HTMLHsTabPanelElement extends Components.HsTabPanel, HTMLStencilElement {
+    }
+    var HTMLHsTabPanelElement: {
+        prototype: HTMLHsTabPanelElement;
+        new (): HTMLHsTabPanelElement;
+    };
+    interface HTMLHsTabPanelsElement extends Components.HsTabPanels, HTMLStencilElement {
+    }
+    var HTMLHsTabPanelsElement: {
+        prototype: HTMLHsTabPanelsElement;
+        new (): HTMLHsTabPanelsElement;
+    };
+    interface HTMLHsTabsElement extends Components.HsTabs, HTMLStencilElement {
+    }
+    var HTMLHsTabsElement: {
+        prototype: HTMLHsTabsElement;
+        new (): HTMLHsTabsElement;
+    };
     interface HTMLElementTagNameMap {
         "hs-button": HTMLHsButtonElement;
         "hs-grid": HTMLHsGridElement;
@@ -115,6 +162,11 @@ declare global {
         "hs-radio": HTMLHsRadioElement;
         "hs-radio-group": HTMLHsRadioGroupElement;
         "hs-stack": HTMLHsStackElement;
+        "hs-tab": HTMLHsTabElement;
+        "hs-tab-list": HTMLHsTabListElement;
+        "hs-tab-panel": HTMLHsTabPanelElement;
+        "hs-tab-panels": HTMLHsTabPanelsElement;
+        "hs-tabs": HTMLHsTabsElement;
     }
 }
 declare namespace LocalJSX {
@@ -172,6 +224,18 @@ declare namespace LocalJSX {
          */
         "orientation"?: Orientation;
     }
+    interface HsTab {
+        "onTabClick"?: (event: HsTabCustomEvent<any>) => void;
+    }
+    interface HsTabList {
+    }
+    interface HsTabPanel {
+    }
+    interface HsTabPanels {
+    }
+    interface HsTabs {
+        "selectedIndex"?: number;
+    }
     interface IntrinsicElements {
         "hs-button": HsButton;
         "hs-grid": HsGrid;
@@ -180,6 +244,11 @@ declare namespace LocalJSX {
         "hs-radio": HsRadio;
         "hs-radio-group": HsRadioGroup;
         "hs-stack": HsStack;
+        "hs-tab": HsTab;
+        "hs-tab-list": HsTabList;
+        "hs-tab-panel": HsTabPanel;
+        "hs-tab-panels": HsTabPanels;
+        "hs-tabs": HsTabs;
     }
 }
 export { LocalJSX as JSX };
@@ -193,6 +262,11 @@ declare module "@stencil/core" {
             "hs-radio": LocalJSX.HsRadio & JSXBase.HTMLAttributes<HTMLHsRadioElement>;
             "hs-radio-group": LocalJSX.HsRadioGroup & JSXBase.HTMLAttributes<HTMLHsRadioGroupElement>;
             "hs-stack": LocalJSX.HsStack & JSXBase.HTMLAttributes<HTMLHsStackElement>;
+            "hs-tab": LocalJSX.HsTab & JSXBase.HTMLAttributes<HTMLHsTabElement>;
+            "hs-tab-list": LocalJSX.HsTabList & JSXBase.HTMLAttributes<HTMLHsTabListElement>;
+            "hs-tab-panel": LocalJSX.HsTabPanel & JSXBase.HTMLAttributes<HTMLHsTabPanelElement>;
+            "hs-tab-panels": LocalJSX.HsTabPanels & JSXBase.HTMLAttributes<HTMLHsTabPanelsElement>;
+            "hs-tabs": LocalJSX.HsTabs & JSXBase.HTMLAttributes<HTMLHsTabsElement>;
         }
     }
 }

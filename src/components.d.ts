@@ -70,6 +70,9 @@ export namespace Components {
     interface HsTabPanels {
     }
     interface HsTabs {
+        /**
+          * Configures the tab/panels to select by default upon loading.
+         */
         "selectedIndex": number;
     }
 }
@@ -234,6 +237,9 @@ declare namespace LocalJSX {
     interface HsTabPanels {
     }
     interface HsTabs {
+        /**
+          * Configures the tab/panels to select by default upon loading.
+         */
         "selectedIndex"?: number;
     }
     interface IntrinsicElements {

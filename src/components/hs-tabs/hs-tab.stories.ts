@@ -14,27 +14,32 @@ export default {
 const Template = (args) => `
   <hs-tabs selected-index="${args.selectedIndex}">
     <hs-tab-list>
-      <hs-tab>Tab 1</hs-tab>
-      <hs-tab>Tab 2</hs-tab>
-      <hs-tab>Tab 3</hs-tab>
-      <hs-tab>Tab 4</hs-tab>
-      <hs-tab>Tab 5</hs-tab>
+      <hs-tab>Episode 1</hs-tab>
+      <hs-tab>Episode 2</hs-tab>
+      <hs-tab>Episode 3</hs-tab>
+      <hs-tab>Episode 4</hs-tab>
+      <hs-tab>Episode 5</hs-tab>
     </hs-tab-list>
     <hs-tab-panels>
       <hs-tab-panel>
-        <hs-header>Tab 1 content</hs-header>
+        <hs-header level="2">Episode 1</hs-header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </hs-tab-panel>
       <hs-tab-panel>
-        <hs-header>Tab 2 content</hs-header>
+        <hs-header level="2">Episode 2</hs-header>
+        <p>Sed erat nulla, vulputate in turpis quis, dignissim vestibulum magna. Aliquam eleifend mauris id vulputate sollicitudin. </p>
       </hs-tab-panel>
       <hs-tab-panel>
-        <hs-header>Tab 3 content</hs-header>
+        <hs-header level="2">Episode 3</hs-header>
+        <p>Morbi gravida lobortis metus ac feugiat. Aliquam ut lacinia lacus. Morbi ullamcorper venenatis dui vel maximus. In malesuada tortor ligula</p>
       </hs-tab-panel>
       <hs-tab-panel>
-        <hs-header>Tab 4 content</hs-header>
+        <hs-header level="2">Episode 4</hs-header>
+        <p>Vivamus vestibulum nisl congue mattis pretium. Aenean lacinia nibh at pharetra blandit. </p>
       </hs-tab-panel>
       <hs-tab-panel>
-        <hs-header>Tab 5 content</hs-header>
+        <hs-header level="2">Episode 5</hs-header>
+        <p>Integer non est porta, malesuada neque quis, rutrum orci. Sed tempus metus sed nisi tempor, in condimentum tellus rutrum.</p>
       </hs-tab-panel>
     </hs-tab-panels>
   </hs-tabs>

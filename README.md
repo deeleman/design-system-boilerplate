@@ -115,9 +115,19 @@ A generic component Storyboard template has been made available at `/src/stories
 
 ### Combining StencilJS and CSS-in-JS
 
-You can find more information and examples in [this tutorial](https://css-tricks.com/web-standards-meet-user-land-using-css-in-js-to-style-custom-elements/), although please beware that the actual moduel name is `@emotion/css` (the tutorial contents might be a bit outdated).
+You can find more information and examples in [this tutorial](https://css-tricks.com/web-standards-meet-user-land-using-css-in-js-to-style-custom-elements/), although please beware that the actual module name is `@emotion/css` (the tutorial contents might be a bit outdated).
 
 This project contains support for the CSS API in Emotion, hence you can benefit from programmatic styling in your components. This can be used in combination with the scoped styles in your component stylesheet, since both strategies play nice together.
+
+## Generating an icons library
+
+The project provides support for generating icon components. In order to generate your own iicon components you jsut need to dump your icon files in the `/src/assets/icons` folder and then run the following command:
+
+```bash
+npm run generate:icons
+```
+
+The files will be parsed and used to generate image icon components on the fly, that will be made available from `./src/components/hs-icons`.
 
 ## :art: Using Figma Design Tokens plugin with this project
 

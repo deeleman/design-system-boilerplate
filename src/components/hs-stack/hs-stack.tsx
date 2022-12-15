@@ -33,10 +33,10 @@ export class HsStack {
    * in the leading or trailing element.
    */
   @Prop({ reflect: true })
-  gap: 'large' | 'small' = 'small';
+  gap: 'large' | 'small' | 'none' = 'small';
 
   stackStyle = css`
-    gap: ${ this.gap === 'large' ? SpacingLarge.bottom : SpacingSmall.bottom}px;
+    gap: ${this.gap === 'large' ? SpacingLarge.bottom : this.gap === 'small' ? SpacingSmall.bottom : 0}px;
     flex-direction: ${this.orientation === 'horizontal' ? 'row' : 'column'};
   `;
 

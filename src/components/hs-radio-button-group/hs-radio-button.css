@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+input[type=radio] {
+  appearance: none;
+  display: block;
+  width: 0;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 0 1em;
+
+  cursor: pointer;
+}
+
+label:hover:not(.selected) {
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+label.selected {
+  background-color: darkslategrey;
+}

@@ -39,7 +39,7 @@ export class HsTabs {
   /**
    * Configures the tab/panels to select by default upon loading.
    */
-  @Prop()
+  @Prop({ reflect: true })
   selectedIndex = 0;
 
   @Element()

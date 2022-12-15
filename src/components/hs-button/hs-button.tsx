@@ -7,10 +7,10 @@ import { Component, h, Prop, Event } from '@stencil/core';
 })
 export class HsButton {
 
-  @Prop()
+  @Prop({ reflect: true })
   variant = "neutral";
 
-  @Prop()
+  @Prop({ reflect: true })
   size = "medium";
 
   @Event({})

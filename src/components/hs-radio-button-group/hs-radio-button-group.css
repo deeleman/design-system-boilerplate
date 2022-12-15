@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+:host > * {
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
